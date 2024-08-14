@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: [[IMAGE_NAME]]
+  repository: bullchallenger/animealth-backend
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: [[IMAGE_TAG]]
+  tag: 20
 
 imagePullSecrets: []
 nameOverride: ""
@@ -39,7 +39,7 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: [[PORT]]
+  port: 8080
 
 ingress:
   enabled: false
